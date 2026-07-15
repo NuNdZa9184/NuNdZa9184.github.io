@@ -197,6 +197,51 @@ margin-top:70px;
     max-width: 440px; 
 }
 
+.card {
+    cursor: pointer;
+    position: relative;
+}
+
+.card::after {
+    content: "Скопировать форму";
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 16px;
+    color: var(--accent);
+    opacity: 0.6;
+    transition: 0.3s;
+    font-family: Orbitron, sans-serif;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+.copy-notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(140, 130, 90, 0.95);
+    color: black;
+    padding: 15px 25px;
+    font-family: Orbitron, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.copy-notification.show {
+    opacity: 1;
+}
+
+
 </style>
 
 </head>
@@ -223,8 +268,7 @@ margin-top:70px;
 
 <div class="grid">
 
-<div class="card">
-
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_CryeG3_G_Black&quot;;\nthis addVest &quot;CUP_V_B_Ciras_Khaki&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nfor &quot;_i&quot; from 1 to 2 do {this addItemToVest &quot;DemoCharge_Remote_Mag&quot;;};\nthis addHeadgear &quot;JCA_H_Cap_01_sand_F&quot;;\nthis addGoggles &quot;JCA_G_balaclava_01_headset_glasses_black_F&quot;;\n\ncomment &quot;Add items&quot;;">
 <img src="picture/Общий.png">
 
 <div class="info">
@@ -249,8 +293,7 @@ margin-top:70px;
 
 </div>
 
-<div class="card">
-
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_CryeG3_G_Black&quot;;\nthis addVest &quot;CUP_V_B_Ciras_Black&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;JCA_H_Cap_01_black_F&quot;;\nthis addGoggles &quot;JCA_G_balaclava_01_headset_glasses_black_F&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\nthis linkItem &quot;CUP_NVG_GPNVG_Hide&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 <img src="picture/Общийночной.png">
 
 <div class="info">
@@ -275,7 +318,7 @@ margin-top:70px;
 
 </div>
 
-<div class="card">
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_CryeG3_G_Black&quot;;\nthis addVest &quot;JCA_V_CarrierRigKBT_01_crew_sand_F&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;E22_RAF_H_Helmet_Sparrow_enhanced_arid_F&quot;;\nthis addGoggles &quot;JCA_G_balaclava_01_glasses_black_F&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\nthis linkItem &quot;CUP_NVG_GPNVG_Hide&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 
 <img src="picture/Штурмовой.png">
 
@@ -300,7 +343,7 @@ margin-top:70px;
 </div>
 
 </div>
-    <div class="card">
+    <div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_CryeG3_G_Black&quot;;\nthis addVest &quot;JCA_V_CarrierRigKBT_01_crew_black_F&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;H_SSU_Stealth_Combat_Helmet_Black_b&quot;;\nthis addGoggles &quot;G_SSU_Balaclava_TI_G_Black&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\nthis linkItem &quot;CUP_NVG_GPNVG_Hide&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
         <img src="picture/Штурмовойночной.png">
         <div class="info">
             <h2>Штурмовой ночной</h2>
@@ -314,7 +357,7 @@ margin-top:70px;
         </div>
     </div>
 
-<div class="card">
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_CryeG3_G_Black&quot;;\nthis addVest &quot;JCA_V_CarrierRigKBT_01_heavy_sand_F&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addItemToUniform &quot;Chemlight_red&quot;;\nfor &quot;_i&quot; from 1 to 2 do {this addItemToVest &quot;MiniGrenade&quot;;};\nthis addItemToVest &quot;SmokeShell&quot;;\nthis addItemToVest &quot;SmokeShellRed&quot;;\nthis addItemToVest &quot;SmokeShellOrange&quot;;\nthis addItemToVest &quot;SmokeShellYellow&quot;;\nthis addItemToVest &quot;Chemlight_red&quot;;\nthis addHeadgear &quot;JCA_H_HelmetHBK_chops_sand_F&quot;;\nthis addGoggles &quot;G_SSU_Balaclava_TI_G_Black&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\nthis linkItem &quot;CUP_NVG_GPNVG_Hide&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 
 <img src="picture/Противоосколочный.png">
 
@@ -340,7 +383,7 @@ margin-top:70px;
 
 </div>
 
-<div class="card">
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_CryeG3_G_Black&quot;;\nthis addVest &quot;JCA_V_CarrierRigKBT_01_heavy_black_F&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;H_SSU_Stealth_Combat_Helmet_Black_b&quot;;\nthis addGoggles &quot;G_SSU_Balaclava_TI_G_Black&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\nthis linkItem &quot;CUP_NVG_GPNVG_Hide&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 
 <img src="picture/Противоосколочныйночной.png">
 
@@ -366,7 +409,7 @@ margin-top:70px;
 
 </div>
 
-<div class="card">
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_Fatigues_Black_Gloves&quot;;\nthis addVest &quot;V_HarnessO_brn&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;JCA_H_Cap_Military_01_sand_F&quot;;\nthis addGoggles &quot;JCA_G_shemagh_01_headset_glasses_sand_F&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\nthis linkItem &quot;CUP_NVG_GPNVG_Hide&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 
 <img src="picture/Разведывательный.png">
 
@@ -392,7 +435,7 @@ margin-top:70px;
 
 </div>
 
-<div class="card">
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_Fatigues_Black_Gloves&quot;;\nthis addVest &quot;JCA_V_CarrierRigKBT_01_recon_black_F&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Rangefinder&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;JCA_H_Beanie_01_black_F&quot;;\nthis addGoggles &quot;JCA_G_balaclava_01_headset_glasses_black_F&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 
 <img src="picture/Разведывательныйночной.png">
 
@@ -418,7 +461,7 @@ margin-top:70px;
 
 </div>
 
-<div class="card">
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;AGE_Fatigues_Short_Black&quot;;\nthis addVest &quot;JCA_V_CarrierRigKBT_01_sand_F&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;E22_H_Helmet_Crew_desert_F&quot;;\nthis addGoggles &quot;JCA_G_balaclava_01_glasses_black_F&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;ItemGPS&quot;;\nthis linkItem &quot;NVGoggles_OPFOR&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 
 <img src="picture/Танкист.png">
 
@@ -444,7 +487,7 @@ margin-top:70px;
 
 </div>
 
-<div class="card">
+<div class="card" data-code="comment &quot;Exported from Arsenal by [NST] Stenka Busha&quot;;\n\ncomment &quot;[!] UNIT MUST BE LOCAL [!]&quot;;\nif (!local this) exitWith {};\n\ncomment &quot;Remove existing items&quot;;\nremoveAllWeapons this;\nremoveAllItems this;\nremoveAllAssignedItems this;\nremoveUniform this;\nremoveVest this;\nremoveBackpack this;\nremoveHeadgear this;\nremoveGoggles this;\n\ncomment &quot;Add containers&quot;;\nthis forceAddUniform &quot;E22_U_Coveralls_grey_F&quot;;\nthis addVest &quot;E22_V_CrewVest_Fighter_F&quot;;\n\ncomment &quot;Add binoculars&quot;;\nthis addWeapon &quot;Binocular&quot;;\n\ncomment &quot;Add items to containers&quot;;\nthis addItemToUniform &quot;MineDetector&quot;;\nthis addHeadgear &quot;E22_H_Helmet_Fighter_JTF_F&quot;;\nthis addGoggles &quot;JCA_G_balaclava_01_glasses_black_F&quot;;\n\ncomment &quot;Add items&quot;;\nthis linkItem &quot;ItemMap&quot;;\nthis linkItem &quot;ItemCompass&quot;;\nthis linkItem &quot;ItemWatch&quot;;\nthis linkItem &quot;ItemRadio&quot;;\nthis linkItem &quot;O_UavTerminal&quot;;\n\ncomment &quot;Set identity&quot;;\n[this,&quot;WhiteHead_19&quot;,&quot;male01rus&quot;] call BIS_fnc_setIdentity;">
 
 <img src="picture/Пилот.png">
 
@@ -482,6 +525,39 @@ margin-top:70px;
 © 2026 NIGHT SHARK TEAM
 
 </footer>
+
+<script>
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+        let codeText = card.getAttribute('data-code');
+        
+        if (!codeText) {
+            alert("Скоро будет доступно");
+            return;
+        }
+
+        codeText = codeText.replace(/\\n/g, '\n');
+
+        navigator.clipboard.writeText(codeText).then(() => {
+            let notification = card.querySelector('.copy-notification');
+            if (!notification) {
+                notification = document.createElement('div');
+                notification.className = 'copy-notification';
+                notification.innerText = 'Форма скопирована';
+                card.appendChild(notification);
+            }
+
+            notification.classList.add('show');
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 1200);
+        }).catch(err => {
+            console.error('Ошибка копирования: ', err);
+        });
+    });
+});
+</script>
 
 </body>
 
