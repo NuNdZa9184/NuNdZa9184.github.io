@@ -14,6 +14,9 @@
             --text-main: #d1d5db;
             --text-muted: #6b7280;
             --border-color: #262930;
+            --bg-dark: #0d0e10;
+            --accent: #8c825a;
+            --accent-glow: rgba(140, 130, 90, 0.4); 
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -83,6 +86,20 @@
         .benefit-card:hover { background: rgba(140, 130, 90, 0.05); }
         .benefit-card h3 { color: var(--accent); margin-bottom: 15px; font-family: 'Orbitron', sans-serif; font-size: 18px; }
         .benefit-card p { color: var(--text-main); line-height: 1.6; font-size: 15px; }
+
+        .hero-visual img {
+
+        filter: drop-shadow(0 0 15px var(--accent-glow));
+        transition: all 0.4s ease; 
+        }
+
+
+        .hero-visual:hover img {
+
+        filter: drop-shadow(0 0 25px var(--accent));
+        transform: scale(1.02);
+        }
+        
     </style>
 </head>
 <body>
@@ -110,7 +127,6 @@
             </div>
         </div>
         
-
         <div class="hero-visual tactical-border">
             <img src="picture/nstlogo.png" alt="Эмблема NST">
         </div>
