@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NST // Форма отряда</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#0d0e10;
+--accent:#8c825a;
+--text:#d1d5db;
+--muted:#777;
+--border:#262930;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0d0e10;
+font-family:'Roboto Condensed',sans-serif;
+color:var(--text);
+
+background-image:
+linear-gradient(rgba(38,41,48,.15) 1px,transparent 1px),
+linear-gradient(90deg,rgba(38,41,48,.15) 1px,transparent 1px);
+
+background-size:40px 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--border);
+    background: #101114;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.logo{
+
+font-family:Orbitron;
+font-size:24px;
+font-weight:bold;
+}
+
+.logo span{
+color:var(--accent);
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+margin-left:25px;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:60px 30px;
+    position:relative;
+    z-index:1;
+}
+
+.title{
+
+font-family:Orbitron;
+font-size:48px;
+margin-bottom:15px;
+}
+
+.subtitle{
+
+color:var(--muted);
+margin-bottom:50px;
+font-size:18px;
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:35px;
+}
+
+.card{
+
+background:#141518;
+
+border:1px solid var(--border);
+
+transition:.3s;
+
+overflow:hidden;
+}
+
+.card:hover{
+
+border-color:var(--accent);
+
+transform:translateY(-5px);
+
+box-shadow:0 0 25px rgba(140,130,90,.25);
+
+}
+
+.card img{
+
+width:100%;
+height:450px;
+object-fit:cover;
+
+transition:.4s;
+}
+
+.card:hover img{
+
+transform:scale(1.04);
+
+}
+
+.info{
+
+padding:25px;
+}
+
+.info h2{
+
+font-family:Orbitron;
+font-size:24px;
+
+margin-bottom:15px;
+
+color:var(--accent);
+
+}
+
+.info ul{
+
+padding-left:20px;
+line-height:2;
+}
+
+.back{
+
+display:inline-block;
+
+margin-top:60px;
+
+padding:14px 28px;
+
+border:1px solid var(--accent);
+
+color:var(--accent);
+
+text-decoration:none;
+
+font-family:Orbitron;
+
+transition:.3s;
+}
+
+.back:hover{
+
+background:var(--accent);
+
+color:black;
+}
+
+footer{
+
+padding:35px;
+text-align:center;
+
+color:#666;
+margin-top:70px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">United Tactical Forces <span>// NST</span></div>
+
+<nav>
+
+<a href="index.html">Главная</a>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<h1 class="title">Форма отряда</h1>
+
+<p class="subtitle">Утвержденные комплекты экипировки NIGHT SHARK TEAM</p>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="uniform1.png">
+
+<div class="info">
+
+<h2>Общий</h2>
+
+<ul>
+
+<li>Черный комбинезон</li>
+
+<li>Разгрузка Ranger Green</li>
+
+<li>Балаклава</li>
+
+<li>Гарнитура</li>
+
+<li>Перчатки</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="uniform2.png">
+
+<div class="info">
+
+<h2>Общий ночной</h2>
+
+<ul>
+
+<li>Черная кепка</li>
+
+<li>Черная разгрузка</li>
+
+<li>Тактическая гарнитура</li>
+
+<li>Черная форма</li>
+
+<li>Дополнительные подсумки</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="uniform3.png">
+
+<div class="info">
+
+<h2>Штурмовой</h2>
+
+<ul>
+
+<li>Черная кепка</li>
+
+<li>Черная разгрузка</li>
+
+<li>Тактическая гарнитура</li>
+
+<li>Черная форма</li>
+
+<li>Дополнительные подсумки</li>
+
+</ul>
+
+</div>
+
+</div>
+    <div class="card">
+        <img src="uniform4.png">
+        <div class="info">
+            <h2>Штурмовой ночной</h2>
+            <ul>
+                <li>Описание</li>
+                <li>Описание</li>
+                <li>Описание</li>
+                <li>Описание</li>
+                <li>Описание</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<a href="index.html" class="back">← Вернуться</a>
+
+</div>
+
+<footer>
+
+© 2026 NIGHT SHARK TEAM
+
+</footer>
+
+</body>
+
+</html>
